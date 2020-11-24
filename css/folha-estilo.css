@@ -1,0 +1,42 @@
+@charset "UTF-8"
+
+body{
+
+}
+
+div#escolhaVeiculos{
+	position: absolute;
+	left: 550px;
+	top:150px;
+	display: inline;	
+}
+
+div#codigoRFID{
+	position: absolute;
+	left: 200px;
+	top:150px;
+}
+
+
+div#checkbox{
+	position: absolute;
+	left: 750px;
+	top:150px;
+	display: inline;
+}
+
+div#simulacao{
+	position: absolute;
+	left: 900px;
+	top:150px;
+	display: inline;
+}
+
+div#portoes{
+	position: absolute;
+	left: 900px;
+	top:100px;
+	display: inline;
+}
+
+

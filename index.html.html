@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/folha-estilo.css"/>
+    <title>Don't Stop</title>
+</head>
+<body>
+
+    <canvas id="game-canvas" width="865" height="545"></canvas>
+    <style>
+        body {
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        canvas {
+          border: 1px solid #000;
+          display: block;
+          margin: 0 auto;
+        }
+    </style>
+
+    <div id="formulario">
+
+      <div id="escolhaVeiculos">
+        
+        <select id="opcoesVeiculos">
+            <option selected>Escolher Veículo</option>
+            <option value="1">Carro 1</option>
+            <option value="2">Carro 2</option>
+            <option value="3">Caminhão</option>
+        </select>
+        <button id="botaoInsercaoVeiculos" onclick="insercaoVeiculos();">Inserir</button>
+      </div>
+        
+        <div id="codigoRFID">
+           <label id= "label" for="inserirCodigoRFID">Código RFID</label>
+           <input type="text" id="textRFID">
+           <button id="botaoInsercaoRFID" onclick="insercaoRFID();">Inserir</button>
+        </div>
+    
+        <div id="checkbox">
+          <input type="checkbox" id="veiculoEntrando" name="posicao">
+          <label id="veiculoEntrar">Entrar</label>
+
+          <input type="checkbox" id="veiculoSaindo" name="posicao">
+          <label id="veiculoSair">Sair</label>
+        </div>
+
+        <div id="simulacao">
+          <button id="botaoIniciaSimulacao" onclick="iniciaSimulacao();">INICIAR</button>
+          <button id="botaoPausaSimulacao" onclick="pausaSimulacao();">PAUSAR</button>
+        </div>
+
+        <div id="portoes">
+          <button id="botaoAbrir" onclick="abrePortao();">ABRIR</button>
+          <button id="botaoFechar" onclick="fechaPortao();">FECHAR</button>
+        </div>
+
+    </div>
+    <script src="./simulacao.js"></script>
+</body>
+</html>
